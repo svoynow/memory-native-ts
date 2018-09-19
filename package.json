@@ -1,0 +1,59 @@
+{
+  "name": "memory-ts",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@types/jest": "^23.3",
+    "@types/lodash": "^4.14.116",
+    "@types/react": "^16.4",
+    "@types/react-native": "^0.55",
+    "@types/react-test-renderer": "^16.0.1",
+    "jest-expo": "~29.0.0",
+    "react-native-scripts-ts": "1.15.0",
+    "react-native-typescript-transformer": "^1.2.10",
+    "react-test-renderer": "16.4.2",
+    "ts-jest": "^23.1.4",
+    "tslib": "^1.9.3",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.1"
+  },
+  "main": "./node_modules/react-native-scripts-ts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-native-scripts-ts start",
+    "eject": "react-native-scripts-ts eject",
+    "android": "react-native-scripts-ts android",
+    "ios": "react-native-scripts-ts ios",
+    "test": "jest"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "useBabelrc": true
+      }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "preset": "jest-expo",
+    "testMatch": [
+      "**/__tests__/**/*.[tj]s?(x)",
+      "**/?(*.)(spec|test).[tj]s?(x)"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  },
+  "dependencies": {
+    "expo": "^29.0.0",
+    "lodash": "^4.17.10",
+    "react": "^16.3.1",
+    "react-native": "~0.55",
+    "react-native-easy-grid": "^0.2.0",
+    "react-native-elements": "^0.19.1"
+  }
+}
